@@ -1,22 +1,19 @@
 # Medicare Fraud Detection
 
-Medicare is a Federal Government healthcare program that provides affordable health insurance to the elderly population and 
-individuals with select disabilities. Unfortunately, there is a significant amount of fraud, waste, and abuse within the
-Medicare system that costs taxpayers billions of dollars and puts beneficiaries’ health and welfare at risk.
-This Capstone project will build a Medicare Fraud Detection model to analyze data and detect the fraudulent based on the previously excluded providers and predict the fraud provider for the future.
-I have obtained all datasets from publicly available Medicare data from the Centers for Medicare and Medicaid Services (CMS).
+Medicare is a Federal Government healthcare program that provides affordable health insurance to the elderly population and individuals with select disabilities. Unfortunately, there is a significant amount of fraud, waste, and abuse within the Medicare system that costs taxpayers billions of dollars and puts beneficiaries’ health and welfare at risk.
+
+This Capstone project will build a Medicare Fraud Detection model to analyze data and detect the fraudulent based on the previously excluded providers and predict the fraud provider for the future. I have obtained all datasets from publicly available Medicare data from the Centers for Medicare and Medicaid Services (CMS).
 
 ## Table of Contents
-- [1. Introduction](#team-introduction)
+- [1. Introduction](#introduction)
 - [2. Problem Statement](#problem-statement)
 - [3. Datasets](#Datasets)
-- [4. Work flow](#Work-flow)
-- [5. Challenges](#Challenges)
-- [6. Evaluation and Performance Metrics](#Evaluation-and-Performance-Metrics)
-- [7. Executive Summary](#executive-summary)
-- [8. References](#References)
+- [4. Work flow](#Workflow)
+- [5. Evaluation and Performance Metrics](#Evaluation-and-Performance-Metrics)
+- [6. Executive Summary](#executive-summary)
+- [7. References](#References)
 
-### 1. Introduction
+### 1. Introduction <a id = 'introduction'></a>
 
 Although no precise measure of health care fraud exists, those who exploit Federal health care programs can cost taxpayers billions of dollars while putting beneficiaries’ health and welfare at risk. The impact of these losses and risks magnifies as Medicare continues to serve a growing number of beneficiaries. According to the 2018 Medicare Trustees Report, in 2017 Medicare provided coverage to 58.4 million beneficiaries and exceeded $710 billion in total expenditures. Medicare enrollment has grown to 60.6 million as of February 2019.
 
@@ -24,11 +21,11 @@ There are many factors that drive the costs of healthcare and health insurance, 
 
 #### 1.1 Project overview
 
-In this project I am building a simple Data Model to show the relationships among the different datasets and identify the key feature-sets for fraud detections.I have gathered multiple datasets and merged them with specific feature.Then I made different machine learning models to detect fraud pattern based on the different features: Service Providers, Insurance subscribers, Provider's claim counts, their drug counts etc.Finally,I have evaluated my models using diffrent classification matrices.
+In this project, I am building a simple data Model to show the relationships among the different datasets and identify the key feature-sets for fraud detections. I have gathered multiple datasets and merged them with specific feature. Then I made different machine learning models to detect fraud pattern based on the different features such as: Service Providers, Insurance subscribers, Provider's claim counts, their drug counts etc. Finally, I evaluated my models using diffrent classification matrices.
 
-### 2. Problem Statement
+### 2. Problem Statement <a id = 'problem-statement'></a>
 
-Build a model using the machine learning method to detect the fraudulence Medicare claims using different modeling techniques from the CMS open datasets and other use open data.
+Build a model using the machine learning method to detect the fraudulence Medicare claims using different modeling techniques from the CMS open datasets and other public use data.
 
 #### 2.1 Define problem
 
@@ -47,6 +44,7 @@ In this project, I have used following Medicare data of 2017
 4. Excluded provider data
 5. Physician payment data
 
+----
 
 1. Prescriber data(Medicare Provider Utilization and Payment Data: 2017 Part D Prescriber):
 
@@ -72,8 +70,9 @@ Physicians in the US are required to declare all payments received from pharmace
 
 #### 4.1 Data Preprocessing:
 
-Fraud detection using CMS Medicare data presents several challenges. The problem is characterized by the four Vs of big data: volume, variety, velocity, and veracity. Around 10 million records released by CMS each year satisfies both high volume and velocity.Another challenge is that the positive class of interest makes up just 0.03% of all records, creating a severe class-imbalanced distribution. Learning from such distributions can be very difficult, and standard machine learning algorithms will typically over-predict the majority class.
-One approach to addressing imbalanced datasets is to oversample the minority class. The simplest approach involves duplicating examples in the minority class, although these examples don’t add any new information to the model. Instead, new examples can be synthesized from the existing examples. This is a type of data augmentation for the minority class and is referred to as the Synthetic Minority Oversampling Technique, or SMOTE.I have used this oversampling method.
+Fraud detection using CMS Medicare data presents several challenges. The problem is characterized by the four Vs of big data: volume, variety, velocity, and veracity. Around 10 million records released by CMS each year satisfies both high volume and velocity. Another challenge is that the positive class of interest makes up just 0.03% of all records, creating a severe class-imbalanced distribution. Learning from such distributions can be very difficult, and standard machine learning algorithms will typically over-predict the majority class.
+
+One approach to addressing imbalanced datasets is to oversample the minority class. The simplest approach involves duplicating examples in the minority class, although these examples don’t add any new information to the model. Instead, new examples can be synthesized from the existing examples. This is a type of data augmentation for the minority class and is referred to as the Synthetic Minority Oversampling Technique, or SMOTE. I have used this oversampling method.
 
 After oversampling my minority class I split my data into train and test.
 
