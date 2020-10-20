@@ -27,7 +27,7 @@ In this project, I am building a simple data Model to show the relationships amo
 
 Build a model using the machine learning method to detect the fraudulence Medicare claims using different modeling techniques from the CMS open datasets and other public use data.
 
-#### 2.1 Define problem
+#### 2.1 Define problem 
 
 The objective of the healthcare system should be to provide essential care to as many patients as possible, but with frauds in healthcare system, this objective can not be adequately fulfilles. Thus, finding ways to identify the  fraudulent activity is necessary. 
 
@@ -35,7 +35,7 @@ CMS’s Medicare public insurance largely serving Americans 65 years and older�
 
 Frauds:
 
-### 3. Datasets
+### 3. Datasets <a id = 'Datasets'></a>
 
 In this project, I have used following Medicare data of 2017
 1. Prescriber data(Part D)
@@ -66,7 +66,7 @@ The LEIE (List of Excluded Individuals and Entities) is updated monthly with all
 
 Physicians in the US are required to declare all payments received from pharmaceutical companies. In addition to “payments received” basic information (ex: amount, date, type) this datasets contains many other useful data elements such as physician ownership in company, consulting fees, charity indicator, dispute status etc. The whole datasets are includes three parts: General Payment, Research Payment and Physician Ownership Details.
 
-### 4. Work flow
+### 4. Work flow <a id = 'Workflow'></a>
 
 #### 4.1 Data Preprocessing:
 
