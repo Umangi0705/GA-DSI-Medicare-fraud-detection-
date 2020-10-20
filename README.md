@@ -66,6 +66,8 @@ The LEIE (List of Excluded Individuals and Entities) is updated monthly with all
 
 Physicians in the US are required to declare all payments received from pharmaceutical companies. In addition to “payments received” basic information (ex: amount, date, type) this datasets contains many other useful data elements such as physician ownership in company, consulting fees, charity indicator, dispute status etc. The whole datasets are includes three parts: General Payment, Research Payment and Physician Ownership Details.
 
+I cleaned all dataset and merged them with the common column NPI(National Provider Identifier) number and their Name. I collected some important data only which I was going to use in my modeling.
+
 ### 4. Work flow <a id = 'Workflow'></a>
 
 #### 4.1 Data Preprocessing:
@@ -77,6 +79,20 @@ One approach to addressing imbalanced datasets is to oversample the minority cla
 After oversampling my minority class I split my data into train and test.
 
 #### 4.2 Modeling:
+
+This is a classification problem so here I used different classification models as following:
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Bagging Classifier
+4. Random forest Classifier
+5. KNeighbors Classifier
+6. Bernoulli Naive Bayes 
+As I said earlier, the dataset is highly imbalanced as there is only few amount of frauds in a big data so the standard machine learning algorithms will typically over-predict the majority class. Which would unable to make a good model for detecting a fraud so I believed that deep learning is an important area of research that will play a critical role in the future of modeling class-imbalanced big data.
+Finally, I came up with Neural network from which I got improved model with good score.
+
+### Evaluation and Performance Metrics 
+
+
 
 
 
