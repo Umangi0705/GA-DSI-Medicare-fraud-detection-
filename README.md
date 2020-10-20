@@ -78,7 +78,7 @@ One approach to addressing imbalanced datasets is to oversample the minority cla
 
 After oversampling my minority class I split my data into train and test.
 
-#### 4.2 Modeling:
+#### 4.2 Modeling
 
 This is a classification problem so here I used different classification models as following:
 1. Logistic Regression
@@ -87,10 +87,30 @@ This is a classification problem so here I used different classification models 
 4. Random forest Classifier
 5. KNeighbors Classifier
 6. Bernoulli Naive Bayes 
+
 As I said earlier, the dataset is highly imbalanced as there is only few amount of frauds in a big data so the standard machine learning algorithms will typically over-predict the majority class. Which would unable to make a good model for detecting a fraud so I believed that deep learning is an important area of research that will play a critical role in the future of modeling class-imbalanced big data.
 Finally, I came up with Neural network from which I got improved model with good score.
 
-### Evaluation and Performance Metrics 
+### Evaluation and Performance Metrics <a id = 'Evaluation and Performance Metrics'></a>
+
+In this fraud detection problem, accuracy doesn’t work because of the imbalanced datasets.As we had 99% more non-fraudulent data and less than 1% fraud data. So if we predict all data points as a normal class, we would at least get 99% correct. This is called accuracy paradox. So to evaluate my model I will use recall and precision matrices.
+
+### References <a id = 'References'></a>
+
+Datasets:
+ 
+https://data.cms.gov/Medicare-Durable-Medical-Equipment-DME-/Medicare-Referring-Provider-DMEPOS-PUF-CY2017/k2nz-4k5i
+https://data.cms.gov/Medicare-Part-D/Medicare-Provider-Utilization-and-Payment-Data-201/77gb-8z53 
+https://oig.hhs.gov/exclusions/exclusions_list.asp 
+https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/OpioidMap_Medicaid_State
+https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/PartD2017
+
+Other:
+https://blogs.sas.com/content/hiddeninsights/2019/08/12/combating-insurance-fraud-with-machine-learning/
+https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0225-0
+https://digital.hbs.edu/platform-rctom/submission/chasing-medicare-fraud-with-machine-learning/
+https://pyligent.github.io/2018-08-26-CMS-Medicare-Data-Fraud-Detection/
+
 
 
 
