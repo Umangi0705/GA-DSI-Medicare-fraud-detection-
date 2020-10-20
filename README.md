@@ -91,9 +91,11 @@ This is a classification problem so here I used different classification models 
 As I said earlier, the dataset is highly imbalanced as there is only few amount of frauds in a big data so the standard machine learning algorithms will typically over-predict the majority class. Which would unable to make a good model for detecting a fraud so I believed that deep learning is an important area of research that will play a critical role in the future of modeling class-imbalanced big data.
 Finally, I came up with Neural network from which I got improved model with good score.
 
-### Evaluation and Performance Metrics <a id = 'Evaluation and Performance Metrics'></a>
+### 5. Evaluation and Performance Metrics <a id = 'Evaluation and Performance Metrics'></a>
 
 In this fraud detection problem, accuracy doesn’t work because of the imbalanced datasets.As we had 99% more non-fraudulent data and less than 1% fraud data. So if we predict all data points as a normal class, we would at least get 99% correct. This is called accuracy paradox. So to evaluate my model I will use recall and precision matrices.
+
+### 6. Excecutive summary <a id = 'Excecutive summary'></a>
 
 ### References <a id = 'References'></a>
 
