@@ -33,8 +33,6 @@ The objective of the healthcare system should be to provide essential care to as
 
 CMS’s Medicare public insurance largely serving Americans 65 years and older—is estimated to dole out 6 billion dollars due to fraud every year, representing about 10% of its 60 billion dollar annual expenditures. CMS relies on it to detect and prevent fraud, waste and abuse in Part D program. But using the traditional methods, the fraud detection is conducted on random samples by human experts. The consequences are the samples might be misleading or manual detection is costly. Fraud and medical billing errors represent a huge cost in the U.S healthcare system.  Machine learning plays an innovative role in fraud detection because it can very quickly predict potential fraud cases based on past available data.
 
-Frauds:
-
 ### 3. Datasets <a id = 'Datasets'></a>
 
 In this project, I have used following Medicare data of 2017
@@ -95,11 +93,11 @@ Finally, I came up with Neural network from which I got improved model with good
 
 In this fraud detection problem, accuracy doesn’t work because of the imbalanced datasets.As we had 99% more non-fraudulent data and less than 1% fraud data. So if we predict all data points as a normal class, we would at least get 99% correct. This is called accuracy paradox. So to evaluate my model I will use recall and precision matrices.
 
-Logistic model predicted around 60% correctly the fraud providers while there are around 27000 predicted non fraud providers who were actual fraud provider. Neural Network gave me only 
+Logistic model predicted around 60% correctly the fraud providers while there are around 27000 predicted non fraud providers who were actual fraud provider. Neural Network gave me only 25 false negative and for fraud detection the consequences of predicting non fraud but actually they fraud is high so I will choose Neural Network model.
 
 ### 6. Excecutive summary <a id = 'Excecutive summary'></a>
 
-I performed various supervised learning classification models and got different scores for each of them gave me high score for my false negatives which is saying that my models are incorrectly predicting frauds. As I mentioned above my dataset has highly imbalance class which was the obstacle in predicting the fraud effectively. I will continue work on this project and I will find some missing data for the excluded providers and try some other mehods. 
+I performed various supervised learning classification models and got different scores for each of them gave me high score for my false negatives which is saying that my models are incorrectly predicting frauds which causes more problems as you predict provider is not fraud but in actual he is fraud.Neural Network search for every detail so it gave me only 25 False negative so I would choose NN model as good model for my project. As I mentioned above my dataset has highly imbalance class which was the obstacle in predicting the fraud effectively. I will continue work on this project and I will find some missing data for the excluded providers and try some other mehods. 
 
 ### References <a id = 'References'></a>
 
