@@ -95,7 +95,11 @@ Finally, I came up with Neural network from which I got improved model with good
 
 In this fraud detection problem, accuracy doesn’t work because of the imbalanced datasets.As we had 99% more non-fraudulent data and less than 1% fraud data. So if we predict all data points as a normal class, we would at least get 99% correct. This is called accuracy paradox. So to evaluate my model I will use recall and precision matrices.
 
+Logistic model predicted around 60% correctly the fraud providers while there are around 27000 predicted non fraud providers who were actual fraud provider. Neural Network gave me only 
+
 ### 6. Excecutive summary <a id = 'Excecutive summary'></a>
+
+I performed various supervised learning classification models and got different scores for each of them gave me high score for my false negatives which is saying that my models are incorrectly predicting frauds. As I mentioned above my dataset has highly imbalance class which was the obstacle in predicting the fraud effectively. I will continue work on this project and I will find some missing data for the excluded providers and try some other mehods. 
 
 ### References <a id = 'References'></a>
 
